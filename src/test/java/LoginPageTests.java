@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.title;
 import static org.openqa.selenium.remote.BrowserType.CHROME;
 
 public class LoginPageTests {
@@ -23,6 +24,12 @@ public class LoginPageTests {
     @Test
     public void login(){
         loginPage.login();
+        title();
+    }
+
+    @Test
+    public void count(){
+        Assert.assertEquals(0,0);
     }
 
     @After
